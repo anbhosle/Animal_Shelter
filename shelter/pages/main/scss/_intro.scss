@@ -1,0 +1,132 @@
+.intro {
+  display: flex;
+  justify-content: space-between;
+    &__content {
+      display: flex;
+      flex-direction: column;
+    }
+    &__title {
+      color: #ffffff;
+      font-family: Georgia;
+      font-size: 3.38461rem;
+      font-weight: 400;
+      line-height: 130%;
+      max-width: 310px;
+      margin-bottom: 41px;
+      margin-top: 224px;
+    }
+    &__text {
+      max-width: 460px;
+      color: #cdcdcd;
+      font-family: Arial;
+      font-size: 1.15384rem;
+      font-weight: 400;
+      line-height: 24px;
+      margin-bottom: 43px;
+    }
+    &__img {
+      margin-top: 60px;
+    }
+}
+
+.btn {
+  width: 207px;
+  height: 52px;
+  border-radius: 100px;
+  background-color: #f1cdb3;
+  color: #292929;
+  border: none;
+  font-family: Georgia;
+  font-size: 1.30769rem;
+  font-weight: 400;
+  letter-spacing: 1.02px;
+  line-height: 22.1px;
+  cursor: pointer;
+  &:hover{
+    background-color: #FDDCC4;
+  }
+}
+@media (max-width: 1050px) {
+  .intro {
+    flex-wrap: wrap;
+    justify-content: center;
+  &__img img {
+    margin-left:142px;
+    width: 80%;
+  }
+  &__title {
+    margin-top: 60px;
+    text-align: left;
+  }
+  &__content {
+    padding: 0 122px;
+    padding: 0;
+    text-align: center;
+  }
+}
+}
+@media (max-width: 768px) {
+  .intro {
+    flex-wrap: wrap;
+    justify-content: center;
+      &__content {
+        padding: 0 122px;
+        padding: 0;
+        text-align: center;
+      }
+      &__title {
+        margin-top: 60px;
+        text-align: left;
+      }
+      &__text {
+        text-align: left; 
+      }
+      &__img {
+        margin-top: 100px;
+      }
+      &__img img {
+        margin-left:142px;
+        width: 80%;
+      }
+  }
+  .btn {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 625px) {
+  .intro__title {
+    font-size: 25px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .intro__text {
+    text-align: center;
+  }
+  .intro__img {
+    margin-top: 105px;
+  }
+  .intro__img img {
+    margin-left:41px;
+    width: 83%;
+  }
+}
+@media (max-width: 414px) {
+  .intro__img img {
+    width: 84%;
+  }
+}
+@media (max-width: 420px) {
+  .intro__img {
+    margin-top: 53px;
+  }
+}
+@media (max-width: 320px) {
+  .intro__img img {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+

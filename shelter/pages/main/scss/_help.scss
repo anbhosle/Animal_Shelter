@@ -1,0 +1,121 @@
+.help__title {
+  text-align: center;
+  color: #545454;
+  font-family: Georgia;
+  font-size: 35px;
+  font-weight: 400;
+  letter-spacing: 2.1px;
+  line-height: 45.5px;
+  padding-top: 81px;
+}
+@media (max-width: 768px) {
+  .help__title {
+    margin-bottom: 0;
+  }
+}
+.help__slider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 97px;
+}
+.help__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 58px;
+  justify-content: space-between;
+  margin-left: 60px;
+  margin-right: 60px;
+  min-height: 114px;
+  &:last-child {
+
+  }
+}
+@media (max-width: 768px) {
+  .help__item {
+    margin: 0;
+    margin-top: 60px;
+    margin-bottom: 0;
+    width: 234.33333px;
+    min-height: 110px;
+  }
+  .help__item {
+    margin: 0;
+    margin-top: 60px;
+    margin-bottom: 0;
+    width: 150px;
+    min-height: 110px;
+    text-align: center;
+  }
+}
+@media (max-width: 763px) {
+  .help__slider {
+    justify-content: space-between;
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+  .help__item {
+    margin: 0;
+    margin-top: 60px;
+    margin-bottom: 0;
+    width: 234.33333px;
+    min-height: 110px;
+  }
+}
+@media (max-width: 729px) {
+  .help__slider {
+    justify-content: space-between;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+}
+@media (max-width: 629px) {
+  .help__slider {
+    justify-content: space-between;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+}
+@media (max-width: 549px) {
+  .help__slider {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .help__item {
+    margin: 0;
+    margin-top: 60px;
+    margin-bottom: 0;
+    width: 150px;
+    min-height: 110px;
+    text-align: center;
+  }
+
+}
+.item__name {
+  color: #545454;
+  font-family: Georgia;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  line-height: 27px;
+}
+@media (max-width: 420px) {
+  .help__title {
+    font-size: 25px;
+    padding-top: 32px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+  }
+  .help__item {
+    margin: 0;
+    margin-top: 60px;
+    margin-bottom: 0;
+    width: 150px;
+    min-height: 110px;
+    text-align: center;
+  }
+}

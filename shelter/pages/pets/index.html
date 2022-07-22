@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../pets/scss/style.css" />
+    <title>shelter</title>
+  </head>
+  <body>
+    <section class="modal">
+      <div class="modal__window">
+        <div class="container">
+        <div class="modal__content">
+        </div>
+      </div>
+      </div>
+    </section>
+    <section class="burger__menu" hidden>
+      <ul class="burger__nav">
+        <div class="burger__logo">
+          <a href="../main/index.html"> 
+            <h1 class="burger__logo__title">Nidhi Jeej Aashray</h1>
+            <p class="burger__logo__subtitle">Shelter for pets in Chattisgarh, Bilaspur</p>
+          </a>
+        </div>  
+        <li class="burger__nav__item burger__nav__item_active">
+          <a class="burger__nav__item" href="../../pages/main/index.html"
+            >About the shelter</a
+          >
+        </li>
+        <li class="burger__nav__item">
+          <a id = "burger__nav__home" class="burger__nav__item" href="#"
+            >Our pets</a
+          >
+        </li>
+        <li class="burger__nav__item">
+          <a class= "burger__nav__item" href="javascript:void(0)">Help the shelter</a>
+          </li>
+        <li class="burger__nav__item">
+          <a class= "burger__nav__item" href="javascript:void(0)">Contacts</a>
+          </li>
+      </ul>
+    </section>
+    <div class="header__wrap">
+    <div class="container">
+      <header class="header">
+        <div class="header__logo">
+          <a href="../main/index.html"> 
+            <h1 class="header__title">Nidhi jeev Aashray</h1>
+            <p class="header__subtitle">Shelter for pets in Chattisgarh, Bilaspur</p>
+          </a>
+        </div>
+        <button class="burger" type="button" id="navToggle">
+          <span class="burger__item">Menu</span>
+        </button>
+        <nav class="nav">
+          <a class="nav__item" href="../main/index.html"
+            >About the shelter</a
+          >
+          <a
+            class="nav__item nav__item_active"
+            href="./index.html"
+            >Our pets</a
+          >
+          <a href="javascript:void(0)" class="nav__item">Help the shelter</a>
+          <a href="#footer" class="nav__item">Contacts</a>
+        </nav>
+      </header>
+    </div>
+  </div>
+    <main>
+      <section class="friends">
+        <div class="container">
+          <h2 class="friends__title">
+            Our friends who<br />
+            are looking for a house
+          </h2>
+          <div class="friends__block">
+          </div>
+          <section class="slider">
+            <a id ="doubleprev" class="slider__item slider__item--disable" href="#"><<</a>
+            <a id ="prev" class="slider__item slider__item--disable" href="#"><</a>
+            <a id ="focus" class="slider__item slider__item--focus" href="#">1</a>
+            <a id ="next" class="slider__item slider__item--active" href="#">></a>
+            <a id ="doublenext" class="slider__item slider__item--active" href="#">>></a>
+          </section>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="footer">
+      <div class="container">
+        <section class="footer__wrapper">
+          <div class="contacts__container">
+            <h3 class="contacts__title">For questions and suggestions</h3>
+            <div class="contacts__item contacts__item--mail">
+              <a href="mailto:email@shelter.com">email@shelter.com</a>
+            </div>
+            <div class="contacts__item contacts__item--phone">
+              <a href="tel:+136745677554">+13 674 567 75 54</a>
+            </div>
+          </div>
+          <div class="contacts__container">
+            <h3 class="contacts__title contacts__title--pin">
+              We are waiting for your visit
+            </h3>
+            <div class="contacts__item contacts__item--pin">
+              <a target="_blank" href="https://goo.gl/maps/Haxhrx2xo2iDKU7d6"
+                >Chattisgarh, Bilaspur (entrance from the store)</a
+              >
+            </div>
+            <div class="contacts__item contacts__item--pin">
+              <a target="_blank" href="https://goo.gl/maps/bQXerXBRFL6vgd5x6"
+                >Kuduadand Shiv Chowk, Chattisgarh, Bilaspur
+              </a>
+            </div>
+          </div>
+          <div class="footer__img">
+            <img src="../../assets/images/footer-puppy.png" alt="puppy" />
+          </div>
+        </section>
+      </div>
+    </footer>
+    <script src="./app.js"></script>
+    <script src="https://kit.fontawesome.com/34525a93f0.js" crossorigin="anonymous"></script>
+  </body>
+</html>

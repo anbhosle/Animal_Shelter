@@ -1,0 +1,216 @@
+.pets {
+  background-color: #f6f6f6;
+  padding-top: 82px;
+    &__wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow: hidden;
+    }
+    &__title {
+      max-width: 400px;
+      text-align: center;
+      color: #545454;
+      font-family: Georgia;
+      font-size: 2.69230rem;
+      font-weight: 400;
+      line-height: 45.5px;
+    }
+    &__title span {
+      display: block;
+      letter-spacing: 2.1px;
+    }
+    &__button {
+      width: 261px;
+      height: 52px;
+      margin-bottom: 101px;
+    }
+    &__content {
+      display: flex;
+      align-items: center;
+    }
+    &__content .slider-button {
+      order: -1;
+      border: 3px solid #F1CDB3;
+      border-radius: 100%;
+      padding: 0;
+      background: none;
+      width: 52px;
+      height: 52px;
+    }
+    &__content .slider-button:hover {
+      cursor: pointer;
+      background: #F1CDB3;
+    }
+    &__content .slider-button_reverted {
+      transform: rotate(180deg);
+      border: 3px solid #F1CDB3;
+      border-radius: 100%;
+      padding: 0;
+      background: none;
+      width: 52px;
+      height: 52px;
+    }
+    &__content .slider-button_reverted:hover {
+      cursor: pointer;
+      background: #F1CDB3;
+    }
+    &__cards {
+      display: flex;
+      padding: 0 52px;
+      overflow: hidden;
+    }
+}
+
+.card {
+  width: 271px;
+  height: 435px;
+  border-radius: 9px;
+  background-color: #FAFAFA;
+  text-align: center;
+  margin: 59px 0;
+  z-index: 1;
+  margin-right: 89px;
+          &:last-child {
+            margin-right: 0;
+          }
+          &:hover {
+            background-color: #FFFFFF;
+            box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+          }
+          &__name {
+            font-family: Georgia;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 23px;
+            letter-spacing: 0.06em;
+            padding-top: 27px;
+          }
+          &__text {
+            color: #292929;
+            font-family: Georgia;
+            font-size: 1.30769rem;
+            font-weight: 400;
+            letter-spacing: 1.02px;
+            line-height: 22.1px;
+            position: relative;
+            margin-top: 46px;
+            z-index: 1;
+            cursor: pointer;
+          }
+          &__text:hover:after {
+            background-color:  #F1CDB3;
+          }
+          &__text::after {
+            content: "";
+            width: 187px;
+            height: 52px;
+            position: absolute;
+            border: 2px solid #F1CDB3;
+            border-radius: 100px;
+            top: -15px;
+            right: 42px;
+            z-index: -1;
+            cursor: pointer;
+          }
+}
+
+@keyframes showSlideRight {
+  0% {transform: translateX(100%);
+    opacity: 0;}
+  100%   { transform: translateX(0);
+  opacity: 1;}
+}
+
+@keyframes showSlideLeft {
+  0% {transform: translateX(-100%);
+    opacity: 0;}
+  100%   { transform: translateX(0);
+  opacity: 1; }
+}
+
+@media (max-width: 1200px) {
+  .card--hide {
+    display: none;
+  }
+}
+
+@media (max-width: 1046px) {
+  .card--hide {
+    display: none;
+  }
+  .pets__cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0;
+    margin-right: 0;
+  }
+  .card {
+    margin: 59px 16px;
+    &:nth-child(2) {
+      margin-right: 8px;
+    }
+  }
+}
+@media (max-width: 750px) {
+  .card--hide-sm {
+    display: none;
+  }
+}
+@media (max-width: 490px) {
+  .pets {
+    padding-top: 33px;
+    &__title {
+      font-size: 25px;
+      line-height: 130%;
+      text-align: center;
+      margin-bottom: 0;
+    }
+    &__title span {
+      letter-spacing: 1.5px;
+    }
+    .__wrapper {
+      display: block;
+    }
+    &__content {
+      margin-top: 0;
+      display: block;
+    }
+  }
+}
+@media (max-width: 420px) {
+  .card--hide-sm {
+    display: none;
+  }
+  .card {
+    margin: 0;
+    margin-top: 42px;
+  }
+  .pets {
+    padding-top: 33px;
+    &__title {
+      font-size: 25px;
+      line-height: 130%;
+      text-align: center;
+      margin-bottom: 0;
+    }
+    &__title span {
+      letter-spacing: 1.5px;
+    }
+    .__wrapper {
+      display: block;
+    }
+    &__content {
+      margin-top: 0;
+      display: block;
+    }
+  }
+  .slider-button {
+    margin: 20px 77px 42px 43px;
+  }
+  .pets__button {
+    margin-bottom: 32px;
+  }
+}

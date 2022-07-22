@@ -1,0 +1,112 @@
+.addition {
+  background-color: #f6f6f6;
+    &__content {
+      padding-top: 81px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row-reverse;
+      justify-content: center;
+    }
+    &__img {
+      margin-top: 10px;
+      margin-bottom: 106px;
+      margin-right: 31px;
+    }
+    &__title {
+      color: #545454;
+      font-family: Georgia;
+      font-size: 2.69230rem;
+      font-weight: 400;
+      letter-spacing: 2.1px;
+      line-height: 45.5px;
+      margin-bottom: 20px;
+    }
+    &__subtitle {
+      color: #545454;
+      font-family: Georgia;
+      font-size: 1.153845rem;
+      font-weight: 400;
+      letter-spacing: 0.9px;
+      line-height: 16.5px;
+      margin-bottom: 19px;
+    }
+    &__text {
+      max-width: 380px;
+      color: #b2b2b2;
+      font-family: Arial;
+      font-size: 0.92307rem;
+      font-weight: 400;
+      line-height: 18px;
+      padding-top: 20px;
+    }
+}
+.btn__link:hover {
+  background-color:  #FDDCC4;
+  border-color: #FDDCC4;
+}
+@media (max-width: 768px) {
+  .addition__content {
+    justify-content: center;
+  }
+  .addition__img {
+    margin-top: 61px;
+    margin-bottom: 95px;
+  }
+  .addition__subtitle {
+    margin-bottom: 20px;
+  }
+}
+.btn__link {
+  display: inline-block;
+  margin: 0 auto;
+  text-decoration: none;
+  color: #292929;
+  padding: 9px 30px;
+  text-align: center;
+  font-family: Georgia;
+  font-size: 1.53846rem;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  border: 2px solid #f1cdb3;
+  position: relative;
+  background-color: #f1cdb3;
+  line-height: 20px;
+  width: 349px;
+  height: 43px;
+  border-radius: 9px;
+  padding-left: 57px;
+  padding-right: 10px;
+    &::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 24px;
+  top: 7px;
+  left: 14px;
+  background-image: url("../../../assets/images/credit-card.png");
+}
+}
+@media (max-width: 550px) {
+  .addition__title {
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 130%;
+  }
+  .addition__img img {
+    width: 100%;
+    margin: 0;
+  }
+  .btn__link {
+    width: 281px;
+    font-family: Georgia;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 110%;
+  }
+  .addition__subtitle {
+    font-size: 14px;
+  }
+}
